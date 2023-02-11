@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendado</title>
+    <link rel="stylesheet" href="../css/styles.css">
+<!--en esta pag quise sumar una banda recomendada y una section para que el usuario ingrese otra banda-->
+</head>
+
+<body>
+    <header>
+        <nav class="enlaces" > <!--class para modificar todo el nav-->
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/conciertos.html">Conciertos</a></li>
+                <li><a href="../pages/recomendado.html">Recomendamos</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="#footer">Nosotros!</a></li>
+            </ul>
+    </nav>
+        <h1>Recomendado</h1>
+
+    </header>
+    <main class="media_artist">
+        <h2>Parcels|Somethinggreater</h2>
+        <p>Parcels es una banda australiana de electropop proveniente de Byron Bay, Nueva Gales
+            del Sur, formada en
+            2014. En la actualidad están instalados en Berlín, Alemania. La banda está compuesta por Louie Swain
+            (teclados), Patrick Hetherington (guitarra y teclados), Noah Hill (bajo), Anatole "Toto" Serret (batería y
+            percusión) y Jules Crommelin (guitarra). Parcels se describe a sí mismo como "una especie de mezcla entre
+            electro-pop y disco-soul".
+            En el año 2021 lanzaron su último album de estudio, dividido en tres partes, titulado Day/Night. </p>
+    </main>
+
+    <section class="media_artist">
+        <div class="other_media">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qlITWOriA6E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>Parcels</iframe>
+            <img src="../assets/img/parcels.jfif" alt="parcels">
+        </div>
+
+        <div>
+            <h2>¿Qué banda nos recomendarías y por qué? Contanos!</h2>
+            <input type="text" class="width_send" placeholder="Banda recomendada">
+            <label for="send"></label>
+            <input type="submit" name="send" id="send">
+        </div>
+    </section>
+
+    <footer id="footer" class="grid-footer"> <!--el id es para que desde el nav baje al footer-->
+
+        <div class="footer-opinion">
+            <input type="text" placeholder="Dejanos tu opinión">
+            <label for="send"></label>
+            <input type="submit" value="Enviar opinión" name="send" id="send">
+        </div>
+
+        <div class="footer-social_media">
+            <a href="https://www.twitter.com" target="_blank"><img src="../assets/img/icons8-twitter-26.png"
+                    alt="twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/icons8-instagram-26.png"
+                    alt="instagram"></a>
+            <a href="https://www.spotify.com/" target="_blank"><img src="../assets/img/icons8-spotify-26.png"
+                    alt="spotify"></a>
+        </div>
+
+        <div class="footer-legal">
+            <a href="htpp">Legal</a>
+            <a href="htpp">Cookies</a>
+            <a href="htpp">Política de Privacidad</a>
+            <a href="htpp">Centro de privacidad</a>
+            <a href="htpp">Acerca de los anuncios</a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>© Tobias Hendler</p>
+        </div>
+
+    
+
+    </footer>
+
+</body>
+</html>
