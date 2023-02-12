@@ -118,36 +118,31 @@ main {
     height: 267px;
 }
 
-/*.media_artist{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    
-}*/
 
-    .media_artist-iframe {
-        width: 200px;
-        height: 200px;
-    }
-    
-    .media_artist-img {
-        width: 200px;
-        height: 200px;
-        
-        
-    }
-    
-    .media_artist-p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.media_artist-iframe {
+    width: 200px;
+    height: 200px;
+}
+
+.media_artist-img {
+    width: 200px;
+    height: 200px;
+
+
+}
+
+.media_artist-p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    }
+}
 
-    .contacto-form {
+.contacto-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 
@@ -161,8 +156,9 @@ main {
 }
 
 
-.artista-p{
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+.artista-p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
 }
 
 
@@ -201,6 +197,84 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 }
 
 
+.media_artist {
+    display: grid;
+
+    grid-template-areas:
+        "concierto1 concierto2 concierto3"
+        "concierto4 concierto5 concierto6"
+        "concierto7 concierto8 concierto9"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    margin:25px;
+}
+
+.concierto1 {
+    display: grid;
+    grid-area: concierto1;
+    display: flex;
+    
+}
+
+.concierto2 {
+    display: grid;
+    grid-area: concierto2;
+    display: flex;
+    
+}
+
+.concierto3 {
+    display: grid;
+    grid-area: concierto3;
+    display: flex;
+
+}
+
+.concierto4 {
+    display: grid;
+    grid-area: concierto4;
+    display: flex;
+
+}
+
+.concierto5{
+    display: grid;
+    grid-area: concierto5;
+    display: flex;
+
+}
+
+.concierto6{
+    display: grid;
+    grid-area: concierto6;
+    display: flex;
+
+}
+
+.concierto7{
+    display: grid;
+    grid-area: concierto7;
+    display: flex;
+
+}
+
+.concierto8{
+    display: grid;
+    grid-area: concierto8;
+    display: flex;
+
+}
+
+.concierto9{
+    display: grid;
+    grid-area: concierto9;
+    display: flex;
+
+}
+
+.conciertos-list{
+    margin-bottom: 35px;
+}
 
 
 
@@ -238,7 +312,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
 
     main {
         grid-area: main;
-        
+
     }
 
 
@@ -286,11 +360,11 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
         display: none;
     }
 
-    .contacto-button{
+    .contacto-button {
         max-width: 221px;
     }
 
-    .contacto-button_send{
+    .contacto-button_send {
         width: 100%;
     }
 
