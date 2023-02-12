@@ -83,25 +83,6 @@ main {
 
 
 
-.media_artist-iframe {
-    width: 267px;
-    height: 267px;
-    margin-bottom: 0px;
-}
-
-.media_artist-img {
-    width: 267px;
-    height: 267px;
-}
-
-.media_artist-p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-
-
-
 
 /*esta clase modifica el submit de la banda que el usuari recomiende*/
 /*.width_send {
@@ -136,6 +117,54 @@ main {
     width: 267px;
     height: 267px;
 }
+
+/*.media_artist{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    
+}*/
+
+    .media_artist-iframe {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .media_artist-img {
+        width: 200px;
+        height: 200px;
+        
+        
+    }
+    
+    .media_artist-p {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    }
+
+    .contacto-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.h1-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.artista-p{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+}
+
 
 
 
@@ -172,32 +201,15 @@ main {
 }
 
 
-.contacto-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.h1-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
 
 
 @media (max-width:480px) {
     .grid-body {
+
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas:
-            "nav nav"
-            "main main"
-            "main main"
-            "footer footer"
+
     }
 
     nav {
@@ -274,6 +286,14 @@ main {
         display: none;
     }
 
+    .contacto-button{
+        max-width: 221px;
+    }
+
+    .contacto-button_send{
+        width: 100%;
+    }
+
 }
 
 
@@ -285,11 +305,7 @@ main {
     .grid-body {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr;
-        grid-template-areas:
-            "nav nav nav nav nav"
-            "main main main main main"
-            "main main main main main"
-            "footer footer footer footer footer";
+
     }
 
     nav {
