@@ -196,6 +196,9 @@ main {
 
 }
 
+.conciertos-list{
+    margin-bottom: 35px;
+}
 
 .media_artist {
     display: grid;
@@ -272,10 +275,85 @@ main {
 
 }
 
-.conciertos-list{
-    margin-bottom: 35px;
+.h2-recomend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1ed760;
 }
 
+.artist-img{
+    width: 350px;
+    height: 280px;
+    margin-top: 10px;
+}
+
+.artist-img-yt{
+    margin-top: 80px;
+}
+
+
+.artist-concierto-img{
+    width: 270px;
+    height: 200px;
+}
+
+.artist-concierto-list{
+    display: flex;   
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.artist-concierto{
+margin-bottom: 25px;
+    text-align: center;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.artist-p-concierto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1ed760;
+text-decoration: underline white;
+text-indent: 40px;
+}
+
+.grid-artist{
+    display: grid;
+    grid-template-areas: 
+    "header-artist header-artist header-artist header-artist"
+    "main-artist main-artist main-artist aside-artist"
+    "section-artist section-artist section-artist aside-artist"
+    "footer-artist footer-artist footer-artist footer-artist"
+    ;
+    grid-template-columns: 1fr 1fr 1fr 25rem;
+    
+}
+
+.header-artist{
+    display: grid;
+    grid-area: header-artist;
+}
+
+.main-artist{
+    display: grid;
+    grid-area: main-artist;
+    max-width: 900px;
+    margin: 20px 1px 10px 40px;
+}
+
+.aside-artist{
+    display: grid;
+    grid-area: aside-artist;
+    margin: 20px 23px 1px 20px;
+}
+
+.section-artist{
+    display: grid;
+    grid-area: section-artist;
+}
+
+.footer-artist{
+    display: grid;
+    grid-area: footer-artist;
+}
 
 
 @media (max-width:480px) {
