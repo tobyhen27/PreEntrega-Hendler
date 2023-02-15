@@ -78,16 +78,6 @@ main {
     margin: 15px;
 }
 
-/*la clase media_artist se usa para la mayoría de etiquetas de toda las pags)*/
-
-
-
-
-
-/*esta clase modifica el submit de la banda que el usuari recomiende*/
-/*.width_send {
-    width: 20%;
-}*/
 
 
 /*modifica solo el index*/
@@ -108,14 +98,6 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-*/
-
-/*otra clase que modificará lo que no pudo modificar "media_artist" busqué usar una sola clase pero no encontré cómo*/
-.other_media img {
-    width: 267px;
-    height: 267px;
 }
 
 
