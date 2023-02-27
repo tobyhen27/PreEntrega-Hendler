@@ -1,0 +1,531 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*hasta la línea 32 las usé para ingresar font y colores*/
+.class {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+}
+
+.color-spotify1 {
+  color: #1db954;
+}
+
+.color-spotify2 {
+  color: #1ed760;
+}
+
+.color-spotify3 {
+  color: #191414;
+}
+
+body {
+  background-color: #191414;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  padding: 1px;
+}
+
+h1 {
+  color: #1ed760;
+}
+
+a,
+li {
+  color: whitesmoke;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  max-height: 20px;
+}
+
+ul li:hover {
+  background-color: #1ed760;
+}
+
+footer,
+nav {
+  background-color: #1db954;
+  border: 1px solid whitesmoke;
+}
+
+main {
+  margin: 15px;
+}
+
+/*modifica solo el index*/
+.main_index img {
+  width: 184px;
+  height: 184px;
+  margin: 10px;
+}
+
+.main_index p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.artist-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.media_artist-iframe {
+  width: 200px;
+  height: 200px;
+}
+
+.media_artist-img {
+  width: 200px;
+  height: 200px;
+}
+
+.media_artist-p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.artista-p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+.footer-opinion {
+  grid-column: 1/4;
+}
+
+.footer-social_media {
+  display: flex;
+  justify-content: end;
+  margin-right: 25px;
+}
+
+.footer-legal {
+  grid-column: 1/4;
+  margin-top: 25px;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: end;
+  margin: 25px 25px;
+}
+
+.conciertos-list {
+  margin-bottom: 35px;
+}
+
+.media_artist {
+  display: grid;
+  grid-template-areas: "concierto1 concierto2 concierto3" "concierto4 concierto5 concierto6" "concierto7 concierto8 concierto9";
+  grid-template-columns: repeat(3, 1fr);
+  margin: 25px;
+}
+
+.concierto1 {
+  display: grid;
+  grid-area: concierto1;
+  display: flex;
+}
+
+.concierto2 {
+  display: grid;
+  grid-area: concierto2;
+  display: flex;
+}
+
+.concierto3 {
+  display: grid;
+  grid-area: concierto3;
+  display: flex;
+}
+
+.concierto4 {
+  display: grid;
+  grid-area: concierto4;
+  display: flex;
+}
+
+.concierto5 {
+  display: grid;
+  grid-area: concierto5;
+  display: flex;
+}
+
+.concierto6 {
+  display: grid;
+  grid-area: concierto6;
+  display: flex;
+}
+
+.concierto7 {
+  display: grid;
+  grid-area: concierto7;
+  display: flex;
+}
+
+.concierto8 {
+  display: grid;
+  grid-area: concierto8;
+  display: flex;
+}
+
+.concierto9 {
+  display: grid;
+  grid-area: concierto9;
+  display: flex;
+}
+
+.h2-recomend {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #1ed760;
+}
+
+.artist-img {
+  width: 350px;
+  height: 280px;
+  margin-top: 10px;
+}
+
+.artist-img-yt {
+  margin-top: 80px;
+}
+
+.artist-concierto-img {
+  width: 270px;
+  height: 200px;
+}
+
+.artist-concierto-list {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 15px;
+}
+
+.artist-concierto {
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.artist-p-concierto {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #1ed760;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  text-indent: 40px;
+}
+
+.grid-artist {
+  display: grid;
+  grid-template-areas: "header-artist header-artist header-artist header-artist" "main-artist main-artist main-artist aside-artist" "section-artist section-artist section-artist aside-artist" "footer-artist footer-artist footer-artist footer-artist";
+  grid-template-columns: 1fr 1fr 1fr 25rem;
+}
+
+.header-artist {
+  display: grid;
+  grid-area: header-artist;
+}
+
+.main-artist {
+  display: grid;
+  grid-area: main-artist;
+  max-width: 900px;
+  margin: 20px 1px 10px 40px;
+}
+
+.aside-artist {
+  display: grid;
+  grid-area: aside-artist;
+  margin: 20px 23px 1px 20px;
+}
+
+.section-artist {
+  display: grid;
+  grid-area: section-artist;
+}
+
+.footer-artist {
+  display: grid;
+  grid-area: footer-artist;
+}
+
+@media (max-width: 480px) {
+  .grid-body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  nav {
+    grid-area: nav;
+    display: flex;
+    max-width: 100rem;
+  }
+  .list-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 100rem;
+    max-width: 100rem;
+    align-content: space-evenly;
+    padding: 0px;
+  }
+  li {
+    margin: 5px;
+  }
+  main {
+    grid-area: main;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .main_index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer {
+    grid-area: footer;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "footer-legal footer-social_media" "footer-legal footer-copyright";
+  }
+  .footer-legal {
+    grid-area: footer-legal;
+    grid-column: 1/3;
+    margin-top: 7px;
+  }
+  .footer-social_media {
+    grid-area: footer-social_media;
+    grid-column: 4/4;
+    max-height: 25px;
+  }
+  .footer-copyright {
+    grid-area: footer-copyright;
+    grid-column: 2/5;
+    grid-row: 2/4;
+  }
+  .footer-opinion {
+    display: none;
+  }
+  .contacto-button {
+    max-width: 221px;
+  }
+  .contacto-button_send {
+    width: 100%;
+  }
+  .grid-artist {
+    display: grid;
+    grid-template-areas: "header-artist header-artist" "main-artist main-artist" "aside-artist aside-artist" "section-artist section-artist" "footer-artist footer-artist";
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-artist {
+    display: grid;
+    grid-area: header-artist;
+  }
+  .main-artist {
+    display: grid;
+    grid-area: main-artist;
+    margin: 25px;
+  }
+  .aside-artist {
+    display: grid;
+    grid-area: aside-artist;
+  }
+  .section-artist {
+    display: grid;
+    grid-area: section-artist;
+  }
+  .footer-artist {
+    display: grid;
+    grid-area: footer-artist;
+  }
+  .artist-img, .artist-img-yt {
+    width: 310px;
+    height: 200px;
+  }
+  .main-artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .artist-concierto-img {
+    width: 310px;
+    height: 200px;
+  }
+  .artist-concierto-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin: 25px;
+  }
+  .artist-concierto {
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .artist-p-concierto {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #1ed760;
+    -webkit-text-decoration: underline white;
+            text-decoration: underline white;
+    text-indent: 40px;
+    margin-left: 65px;
+  }
+  .media_artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .media_artist-img,
+  .media_artist-iframe {
+    width: 160px;
+  }
+  .section-artist {
+    max-width: 500px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main_index {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .grid-artist {
+    display: grid;
+    grid-template-areas: "header-artist header-artist" "main-artist main-artist" "aside-artist aside-artist" "section-artist section-artist" "footer-artist footer-artist";
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-artist {
+    display: grid;
+    grid-area: header-artist;
+  }
+  .main-artist {
+    display: grid;
+    grid-area: main-artist;
+    margin: 25px;
+  }
+  .aside-artist {
+    display: grid;
+    grid-area: aside-artist;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section-artist {
+    display: grid;
+    grid-area: section-artist;
+  }
+  .footer-artist {
+    display: grid;
+    grid-area: footer-artist;
+  }
+  .artist-concierto-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center space-around;
+  }
+  .artist-img {
+    margin-top: 80px;
+  }
+  .media_artist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1370px) {
+  .grid-body {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+  nav {
+    grid-area: nav;
+  }
+  main {
+    grid-area: main;
+  }
+  .main_index img {
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    margin: 50px;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .grid-artist {
+    display: grid;
+    grid-template-areas: "header-artist header-artist header-artist header-artist" "main-artist main-artist main-artist aside-artist" "section-artist section-artist section-artist aside-artist" "footer-artist footer-artist footer-artist footer-artist";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .header-artist {
+    display: grid;
+    grid-area: header-artist;
+  }
+  .main-artist {
+    display: grid;
+    grid-area: main-artist;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 200px;
+  }
+  .aside-artist {
+    display: grid;
+    grid-area: aside-artist;
+    margin-right: 200px;
+  }
+  .section-artist {
+    display: grid;
+    grid-area: section-artist;
+  }
+  .footer-artist {
+    display: grid;
+    grid-area: footer-artist;
+  }
+  .artist-p-concierto {
+    margin-left: 160px;
+  }
+  .artist-concierto-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .question_recomend {
+    margin-left: 30px;
+  }
+}/*# sourceMappingURL=styles.css.map */
