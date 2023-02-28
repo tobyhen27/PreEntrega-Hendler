@@ -3,31 +3,9 @@
     padding: 0%;
 }
 
-/*hasta la línea 32 las usé para ingresar font y colores*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap');
+@import "font";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap');
-
-.class {
-    font-family: 'Montserrat',
-        sans-serif;
-    font-family: 'Raleway',
-        sans-serif;
-    font-family: 'Sofia Sans Extra Condensed',
-        sans-serif;
-}
-
-.color-spotify1 {
-    color: #1db954;
-}
-
-.color-spotify2 {
-    color: #1ed760;
-}
-
-.color-spotify3 {
-    color: #191414;
-}
+@import "color";
 
 
 
@@ -47,27 +25,24 @@ h1 {
 
 
 
-a,
-li {
-    color: whitesmoke;
-    text-decoration: none;
-    list-style-type: none;
-
-
-}
-
-
-ul {
+ul{
     display: flex;
     justify-content: space-around;
     margin: 10px;
     max-height: 20px;
+    list-style-type: none;
+    li:hover {
+        background-color: #1ed760;
+    }
+} 
+
+a {
+    
+    color: whitesmoke;
+    text-decoration: none;
 }
 
-ul li:hover {
-    background-color: #1ed760;
 
-}
 
 footer,
 nav {
@@ -82,12 +57,11 @@ main {
 
 
 
-/*modifica solo el index*/
+/*index*/
 .main_index img {
     width: 184px;
     height: 184px;
     margin: 10px;
-
 }
 
 .main_index p {
@@ -95,33 +69,19 @@ main {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
-
-.artist-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+/**/
 
 
 
-.media_artist-iframe {
-    width: 200px;
-    height: 200px;
-}
-
-.media_artist-img {
-    width: 200px;
-    height: 200px;
-
-
-}
 
 .media_artist-p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
 
-.contacto-form {
+
+/*Contacto*/
+.contacto-form, .h1-contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,25 +89,16 @@ main {
 
 }
 
-
-
-.h1-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
 
 .artista-p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    ;
+    
 }
 
 
 
-
+/*footer*/
 .grid-footer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -180,6 +131,13 @@ main {
 
 }
 
+
+/*Conciertos*/
+.media_artist-iframe, .media_artist-img  {
+    width: 200px;
+    height: 200px;
+}
+
 .conciertos-list {
     margin-bottom: 35px;
 }
@@ -200,69 +158,49 @@ main {
     display: grid;
     grid-area: concierto1;
     display: flex;
-
 }
 
 .concierto2 {
-    display: grid;
-    grid-area: concierto2;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto3 {
-    display: grid;
-    grid-area: concierto3;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto4 {
-    display: grid;
-    grid-area: concierto4;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto5 {
-    display: grid;
-    grid-area: concierto5;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto6 {
-    display: grid;
-    grid-area: concierto6;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto7 {
-    display: grid;
-    grid-area: concierto7;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto8 {
-    display: grid;
-    grid-area: concierto8;
-    display: flex;
-
+    @extend .concierto1
 }
 
 .concierto9 {
-    display: grid;
-    grid-area: concierto9;
-    display: flex;
-
+    @extend .concierto1
 }
+
+
+
 
 .h2-recomend {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #1ed760;
 }
+
+
 
 .artist-img {
     width: 350px;

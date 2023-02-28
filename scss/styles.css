@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway&family=Sofia+Sans+Extra+Condensed:ital,wght@1,100&display=swap");
 * {
@@ -6,7 +5,6 @@
   padding: 0%;
 }
 
-/*hasta la línea 32 las usé para ingresar font y colores*/
 .class {
   font-family: "Montserrat", sans-serif;
   font-family: "Raleway", sans-serif;
@@ -36,22 +34,20 @@ h1 {
   color: #1ed760;
 }
 
-a,
-li {
-  color: whitesmoke;
-  text-decoration: none;
-  list-style-type: none;
-}
-
 ul {
   display: flex;
   justify-content: space-around;
   margin: 10px;
   max-height: 20px;
+  list-style-type: none;
 }
-
 ul li:hover {
   background-color: #1ed760;
+}
+
+a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 footer,
@@ -64,7 +60,7 @@ main {
   margin: 15px;
 }
 
-/*modifica solo el index*/
+/*index*/
 .main_index img {
   width: 184px;
   height: 184px;
@@ -75,46 +71,25 @@ main {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.artist-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.media_artist-iframe {
-  width: 200px;
-  height: 200px;
-}
-
-.media_artist-img {
-  width: 200px;
-  height: 200px;
-}
-
+/**/
 .media_artist-p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
 
-.contacto-form {
+/*Contacto*/
+.contacto-form, .h1-contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.h1-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 .artista-p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/*footer*/
 .grid-footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -142,6 +117,12 @@ main {
   margin: 25px 25px;
 }
 
+/*Conciertos*/
+.media_artist-iframe, .media_artist-img {
+  width: 200px;
+  height: 200px;
+}
+
 .conciertos-list {
   margin-bottom: 35px;
 }
@@ -153,57 +134,9 @@ main {
   margin: 25px;
 }
 
-.concierto1 {
+.concierto1, .concierto9, .concierto8, .concierto7, .concierto6, .concierto5, .concierto4, .concierto3, .concierto2 {
   display: grid;
   grid-area: concierto1;
-  display: flex;
-}
-
-.concierto2 {
-  display: grid;
-  grid-area: concierto2;
-  display: flex;
-}
-
-.concierto3 {
-  display: grid;
-  grid-area: concierto3;
-  display: flex;
-}
-
-.concierto4 {
-  display: grid;
-  grid-area: concierto4;
-  display: flex;
-}
-
-.concierto5 {
-  display: grid;
-  grid-area: concierto5;
-  display: flex;
-}
-
-.concierto6 {
-  display: grid;
-  grid-area: concierto6;
-  display: flex;
-}
-
-.concierto7 {
-  display: grid;
-  grid-area: concierto7;
-  display: flex;
-}
-
-.concierto8 {
-  display: grid;
-  grid-area: concierto8;
-  display: flex;
-}
-
-.concierto9 {
-  display: grid;
-  grid-area: concierto9;
   display: flex;
 }
 
