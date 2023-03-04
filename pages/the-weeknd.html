@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>#1 The Weekend</title>
+    <!--Seo-->
+    <meta name="description" content="The Weeknd: Su historia, su música y próximos conciertos">
+    <meta name="keyboard" content="spotify, música, artistas, conciertos, The Weeknd, After Hours, Ariana Grande, Dawn FM">
+    <title>The Weekend - #1 del ranking de Spotify</title>
+    <!--links: BT, Animate y Sass-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../scss/styles.css">
     <!--en esta pag es la info personal de cada artista y sus próximos conciertos, solo hice del #1.-->
 </head>
@@ -32,7 +37,7 @@
     </header>
 
     <main class="main-artist">
-        <h1 class="text-center">The Weekend</h1>
+        <h1 class="text-center animate__animated animate__fadeInDown">The Weekend</h1>
         <p class="artista-p "> <!--esta clase es para la font-family-->
             The Weeknd, cuyo nombre real es Abel Makkonen Tesfaye, es un cantante, compositor y productor discográfico canadiense. Nació el 16 de febrero de 1990 en Toronto, Ontario, Canadá, de padres etíopes. The Weeknd ganó popularidad en la década de 2010 por su distintiva voz, letras emotivas y su habilidad para combinar géneros como el R&B, el pop y la música electrónica en su música.
 
@@ -49,19 +54,14 @@ En resumen, The Weeknd es uno de los artistas más emocionantes y exitosos de su
 
     <aside class="aside-artist">
         <div> <!--las clases artist-img y artist-img-yt las usé para alinear el aside-->
-            <img class="artist-img" src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379"
+            <img class="artist-img animate__animated animate__fadeInRight" src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379"
                 alt="The Weeknd">
         </div>
-        <div>
-            <iframe class="artist-img-yt" width="350" height="280" src="https://www.youtube.com/embed/aqEv9rEcIdg?start=26"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
+        <iframe class="animate__animated animate__fadeInRight"width="350" height="280" src="https://www.youtube.com/embed/4nwX8_WA4pA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </aside>
 
     <section class="section-artist">
-<p class="artist-p-concierto">Proximos conciertos:</p> <!--esta clase es para cambiar el estilo del <p>-->
+<p class="artist-p-concierto animate__animated animate__fadeInLeft">Proximos conciertos:</p> <!--esta clase es para cambiar el estilo del <p>-->
 
     <!--las dos clases siguientes las usé para acomodar las imágenes y alinearlas dentro del section-->
         <div class="artist-concierto-list">
@@ -69,19 +69,19 @@ En resumen, The Weeknd es uno de los artistas más emocionantes y exitosos de su
             <div class="artist-concierto" >
                 
                 <a href="https://www.viagogo.com/ar/Entradas-Conciertos/Rap-Hip-Hop-Reggae/The-Weeknd-Entradas/E-151256428"
-                    target="_blank"><img class="artist-concierto-img" src="../assets/img/city.jpg" alt="Etihad Stadium"></a>
+                    target="_blank"><img class="artist-concierto-img animate__animated animate__fadeIn" src="../assets/img/city.jpg" alt="Etihad Stadium"></a>
                 <p>Etihad Stadium</p>
             </div>
 
             <div class="artist-concierto" >
                 <a href="https://www.viagogo.com/ar/Entradas-Conciertos/Rap-Hip-Hop-Reggae/The-Weeknd-Entradas/E-151254623"
-                    target="_blank"><img class="artist-concierto-img" src="../assets/img/suecia.jpg" alt="CASA Arena Horsens"></a>
+                    target="_blank"><img class="artist-concierto-img animate__animated animate__fadeIn" src="../assets/img/suecia.jpg" alt="CASA Arena Horsens"></a>
                 <p>CASA Arena Horsens</p>
             </div>
 
             <div class="artist-concierto" >
                 <a href="https://www.viagogo.com/ar/Entradas-Conciertos/Rap-Hip-Hop-Reggae/The-Weeknd-Entradas/E-151299130"
-                    target="_blank"><img class="artist-concierto-img" src="../assets/img/ajax.jfif" alt="Amsterdam Arena"></a>
+                    target="_blank"><img class="artist-concierto-img animate__animated animate__fadeIn" src="../assets/img/ajax.jfif" alt="Amsterdam Arena"></a>
                 <p>Amsterdam Arena</p>
             </div>
         </div>

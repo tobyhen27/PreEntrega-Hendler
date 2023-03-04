@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Ranking</title>
+    <!--Seo-->
+    <meta name="description" content="Ranking del top 10 de artistas según Spotify">
+    <meta name="keyboard" content="spotify, música, artistas, conciertos, spotify web, ranking, spotify artist, top 10">
+    <title>Ranking de Spotify</title>
+    <!--links: BT, Animate y Sass-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./scss/styles.css">
     <!--la página que quiero hacer es para que muestre el top 10 del ranking de spotify (en ninguna pag de google figura esta información)-->
 </head>
 
 <body class="grid-body"> <!--esta clase se usa para el responsive-->
-
     <header>
         <div>
             <nav>
@@ -32,70 +36,72 @@
     </header>
 
     <main class="main_index"> <!--con esta clase algunos elementos del main-->
-        <h1>Ranking de artistas en Spotify</h1>
+        <h1 class="animate__animated animate__fadeInLeft">Ranking de artistas en Spotify</h1>
 
         <!--para esta página usé boostrap para acomodar los elemntos en dos filas con cinco columnas-->
+
         <div class="text-center">
             <div class="row">
                 <div class="col">
-                    <a href="./pages/artista_o_banda.html"><img
+                    <a href="./pages/the-weeknd.html"><img class="animate__animated animate__fadeIn"
                             src="https://i.scdn.co/image/ab6761610000e5ebb5f9e28219c169fd4b9e8379"
                             alt="#1 The Weekend"></a>
                     <p>#1 The Weeknd</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6"
-                        alt="#2 Ed Sheeran">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6" alt="#2 Ed Sheeran">
                     <p>#2 Ed Sheeran</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0"
-                        alt="#3 Taylor Swift">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb5a00969a4698c3132a15fbb0" alt="#3 Taylor Swift">
                     <p>#3 Taylor Swift</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36"
-                        alt="#4 Justin Bieber">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb8ae7f2aaa9817a704a87ea36" alt="#4 Justin Bieber">
                     <p>#4 Justin Bieber</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb10ca40ea0b0b5082dba0ff75"
-                        alt="#5 Sam Smith">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb10ca40ea0b0b5082dba0ff75" alt="#5 Sam Smith">
                     <p>#5 Sam Smith</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5ebcdce7620dc940db079bf4952"
-                        alt="#6 Ariana Grande">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5ebcdce7620dc940db079bf4952" alt="#6 Ariana Grande">
                     <p>#6 Ariana Grande</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb75348e1aade2645ad9c58829"
-                        alt="#7 David Guetta">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb75348e1aade2645ad9c58829" alt="#7 David Guetta">
                     <p>#7 David Guetta</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9"
-                        alt="#8 Drake">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb4293385d324db8558179afd9" alt="#8 Drake">
                     <p>#8 Drake</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb99e4fca7c0b7cb166d915789"
-                        alt="#9 Rhianna">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb99e4fca7c0b7cb166d915789" alt="#9 Rhianna">
                     <p>#9 Rhianna</p>
                 </div>
                 <div class="col">
-                    <img src="https://i.scdn.co/image/ab6761610000e5eb8ee9a6f54dcbd4bc95126b14"
-                        alt="#10 Bad Bunny">
+                    <img class="animate__animated animate__fadeIn"
+                        src="https://i.scdn.co/image/ab6761610000e5eb8ee9a6f54dcbd4bc95126b14" alt="#10 Bad Bunny">
                     <p>#10 Bad Bunny</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer id="footer" class="grid-footer"> <!--el id es para que desde el nav baje al footer--> <!--en todos los footer use grid desde css-->
+    <footer id="footer" class="grid-footer"> <!--el id es para que desde el nav baje al footer-->
+        <!--en todos los footer use grid desde css-->
 
         <div class="footer-opinion">
             <input type="text" placeholder="Dejanos tu opinión">

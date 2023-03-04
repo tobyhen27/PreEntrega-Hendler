@@ -62,9 +62,9 @@ main {
 
 /*index*/
 .main_index img {
+  margin: 10px;
   width: 184px;
   height: 184px;
-  margin: 10px;
 }
 
 .main_index p {
@@ -72,13 +72,9 @@ main {
 }
 
 /**/
-.media_artist-p {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-}
-
 /*Contacto*/
-.contacto-form, .h1-contacto {
+.contacto-form,
+.h1-contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,9 +114,19 @@ main {
 }
 
 /*Conciertos*/
-.media_artist-iframe, .media_artist-img {
+.media_artist-p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.media_artist-iframe,
+.media_artist-img {
   width: 200px;
   height: 200px;
+}
+
+.concierto-animationh1 {
+  animation-delay: 1s;
 }
 
 .conciertos-list {
@@ -145,10 +151,11 @@ main {
   color: #1ed760;
 }
 
+/*artista o banda*/
 .artist-img {
+  margin-top: 10px;
   width: 350px;
   height: 280px;
-  margin-top: 10px;
 }
 
 .artist-img-yt {
@@ -233,11 +240,11 @@ main {
     align-content: space-evenly;
     padding: 0px;
   }
-  li {
-    margin: 5px;
-  }
   main {
     grid-area: main;
+  }
+  li {
+    margin: 5px;
   }
   p {
     margin-bottom: 1rem;
@@ -303,7 +310,8 @@ main {
     display: grid;
     grid-area: footer-artist;
   }
-  .artist-img, .artist-img-yt {
+  .artist-img,
+  .artist-img-yt {
     width: 310px;
     height: 200px;
   }
@@ -399,7 +407,7 @@ main {
     margin-top: 80px;
   }
 }
-@media (min-width: 1370px) {
+@media (min-width: 481px) and (max-width: 768px) and (min-width: 1370px) {
   .grid-body {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
@@ -411,10 +419,10 @@ main {
     grid-area: main;
   }
   .main_index img {
-    width: 220px;
-    height: 220px;
     margin: 10px;
     margin: 50px;
+    width: 220px;
+    height: 220px;
   }
   footer {
     grid-area: footer;
